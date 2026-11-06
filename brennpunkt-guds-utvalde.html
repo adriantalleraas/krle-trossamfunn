@@ -1566,7 +1566,7 @@
   var hjelp = document.createElement('p');
   hjelp.className = 'oppg-hjelp';
   hjelp.textContent = 'Svarene lagres automatisk i nettleseren din mens du skriver. '
-    + 'Når du er ferdig, trykk «Last ned som fil» nederst og lever fila i Classroom.';
+    + 'Når du er ferdig, trykk «Last ned som fil» nederst og lever fila slik læreren sier, for eksempel i Classroom.';
   wrap.appendChild(hjelp);
 
   // Navnefeltet må komme først: uten det er den nedlastede fila anonym, og
@@ -1753,7 +1753,7 @@
     a.download = filnavn();
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
-    status.textContent = 'Lastet ned som ' + a.download + '. Last den opp i Classroom.';
+    status.textContent = 'Lastet ned som ' + a.download + '. Lever den slik læreren sier, for eksempel i Classroom.';
   };
   document.getElementById('skrivUt').onclick = function () { window.print(); };
   document.getElementById('tomSvar').onclick = function () {
